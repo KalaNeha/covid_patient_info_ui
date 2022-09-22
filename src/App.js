@@ -1,7 +1,7 @@
-import Nav from './component/nav.js';
-import Login from './component/login';
-import Home from './component/home.js';
-import Admin from './component/admin';
+import Nav from './component/Nav';
+import Login from './component/Login';
+import Home from './component/Home';
+import Admin from './component/Admin';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route, Routes} from 'react-router-dom';
 

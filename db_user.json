@@ -1,0 +1,155 @@
+{
+    "countries":[{
+            "name":"India",
+            "active_cases":354664,
+            "recover":12344,
+            "deaths":223
+        },
+        {
+            "name":"USA",
+            "active_cases":354664,
+            "recover":12344,
+            "deaths":223
+        },
+        {
+            "name":"Pakistan",
+            "active_cases":354664,
+            "recover":12344,
+            "deaths":223
+        },
+        {
+            "name":"South Korea",
+            "active_cases":354664,
+            "recover":12344,
+            "deaths":223
+        },
+        {
+            "name":"Japan",
+            "active_cases":354664,
+            "recover":12344,
+            "deaths":223
+        }
+        
+    ],
+
+    "state":[{
+        "name":"Delhi",
+        "active_cases":354664,
+        "recover":12344,
+        "deaths":223    },
+    {
+        "name":"Uttrakhand",
+        "active_cases":354664,
+        "recover":12344,
+        "deaths":223    },
+    {
+        "name":"Kolkata",
+        "active_cases":354664,
+        "recover":12344,
+        "deaths":223    },
+    {
+        "name":"Mumbai",
+        "active_cases":354664,
+        "recover":12344,
+        "deaths":223    },
+    {
+        "name":"Banglore",
+        "active_cases":354664,
+        "recover":12344,
+        "deaths":223    }
+    
+],
+"district":[{
+    "name":"Central Delhi",
+    "active_cases":354664,
+    "recover":12344,
+    "deaths":223},
+{
+    "name":"East Delhi",
+    "active_cases":354664,
+    "recover":12344,
+    "deaths":223},
+{
+    "name":"New Delhi",
+    "active_cases":354664,
+    "recover":12344,
+    "deaths":223},
+{
+    "name":"North Delhi",
+    "active_cases":354664,
+    "recover":12344,
+    "deaths":223},
+{
+    "name":"Shahdra",
+    "active_cases":354664,
+    "recover":12344,
+    "deaths":223}
+
+],
+
+"admin_login":[{
+    "user_name":"Dhruv",
+    "password":"dhruv007"
+},
+{
+    "user_name":"Rahul",
+    "password":"rahul007"
+},
+{
+    "user_name":"Neha",
+    "password":"neha007"
+}
+],
+"patients": [{
+    "id": 1,
+    "name": "Satheesh",
+    "email": "Sat@mail.com",
+    "adderss": "South street",
+    "age":33,
+    "gender":"male",
+    "disease_id":1,
+    "affected_to":
+    [{
+        "name":"John"
+    },
+{
+    "name":"Robert"
+},
+{
+    "name":"Satheesh"
+},
+{
+    "name":"Shivam"
+}]
+}, 
+{
+    "id": 3,
+    "name": "Robert",
+    "email": "robert@mail.com",
+    "adderss": "East street",
+    "age":23,
+    "gender":"male",
+    "disease_id":1,
+    "affected_to":
+    [{
+        "name":"John"
+    },
+    {
+        "name":"Robert"
+    },
+    {
+        "name":"Satheesh"
+    },
+    {
+        "name":"Shivam"
+    }]
+}, {
+    "id": 4,
+    "name": "Mani",
+    "email": "mani@mail.com",
+    "adderss": "West street",
+    "age":60,
+    "gender":"female",
+    "disease_id":1
+}]
+}

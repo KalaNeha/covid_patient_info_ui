@@ -1,7 +1,10 @@
 import React from 'react';
-const Login = () => {
-    return (  
-        <>
+
+
+
+function Login() {
+  return (
+ <>
   <div className="text-center"> Log in </div>
   	<form action="/admin" >
   <div className="mb-3 mx-5">
@@ -40,7 +43,7 @@ const Login = () => {
 </form>
     
 </>
-    );
+  );
 }
- 
+
 export default Login;
