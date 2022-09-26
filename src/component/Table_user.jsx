@@ -11,8 +11,7 @@ import Paper from '@mui/material/Paper';
 export default class BTable extends React.Component {
 
   render(){
-    let rows=this.props.countries;
-    console.log(rows);
+    let rows=this.props.alldata;
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">       
@@ -31,8 +30,9 @@ export default class BTable extends React.Component {
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
+            
               <TableCell component="th" scope="row">
-               <a href={row.name}> {row.name} </a>
+               <a href="/country/india"> {row.name} </a>
               </TableCell>
               <TableCell align="right">{row.active_cases}</TableCell>
               <TableCell align="right">{row.recover}</TableCell>

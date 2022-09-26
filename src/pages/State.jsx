@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import BTable from './Table_user.js';
+import BTable from '../component/Table_user.jsx';
 
 class State_info extends Component {
     state = {
         isLoading: true,
-        states: [],
+        alldata: [],
         error: null
     };
 
@@ -14,7 +14,7 @@ class State_info extends Component {
         }, () => {
             fetch("http://localhost:3002/state").then(res => res.json()).then(result => this.setState({
                 loading: false,
-                states: result
+                alldata: result
             })).catch(console.log);
         });
       }
@@ -25,8 +25,8 @@ class State_info extends Component {
         return (
             <div>
          <BTable
-            state="state"
-             countries={this.state.states}
+            type="states"
+             alldata={this.state.alldata}
              getList={this.getLists}
          />
          
