@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import BTable from './Table_user.js';
+import BTable from '../component/Table_user.jsx';
 
 class Home extends Component {
 
   state = {
     isLoading: true,
-    countries: [],
+    alldata: [],
     error: null
 };
 
@@ -15,7 +15,7 @@ getFetchUsers() {
   }, () => {
       fetch("http://localhost:3002/countries").then(res => res.json()).then(result => this.setState({
           loading: false,
-          countries: result
+          alldata: result
       })).catch(console.log);
   });
 }
@@ -26,8 +26,8 @@ componentDidMount() {
     return (
       <div>
          <BTable
-            country="country"
-             countries={this.state.countries}
+            type="country"
+             alldata={this.state.alldata}
              getList={this.getLists}
          />
          
