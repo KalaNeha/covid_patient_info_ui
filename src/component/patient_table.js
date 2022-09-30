@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
 
-export default class BTable extends React.Component {
+export default class patient_list extends React.Component {
 
   render(){
     let rows=this.props.alldata;
@@ -17,10 +17,13 @@ export default class BTable extends React.Component {
       <Table sx={{ minWidth: 650 }} aria-label="simple table">       
        <TableHead>
           <TableRow>
-            <TableCell>Country</TableCell>
-            <TableCell align="right">Active Cases</TableCell>
-            <TableCell align="right">Close Cases</TableCell>
-            <TableCell align="right">Deaths</TableCell>
+          <TableCell>Name</TableCell>
+            <TableCell align="right">Email</TableCell>
+            <TableCell align="right">ADDRESS</TableCell>
+            <TableCell align="right">Age</TableCell>
+            <TableCell align="right">Gender</TableCell>
+            <TableCell align="right">Status</TableCell>
+
            
           </TableRow>
         </TableHead>
@@ -32,12 +35,14 @@ export default class BTable extends React.Component {
             >
             
               <TableCell component="th" scope="row">
-               <a href="/country/india"> {row.name} </a>
+               <a href={this.props.url}> {row.name} </a>
               </TableCell>
-              <TableCell align="right">{row.active_cases}</TableCell>
-              <TableCell align="right">{row.recover}</TableCell>
-              <TableCell align="right">{row.deaths}</TableCell>
-              
+              <TableCell align="right">{row.email}</TableCell>
+              <TableCell align="right">{row.address}</TableCell>
+              <TableCell align="right">{row.age}</TableCell>
+              <TableCell align="right">{row.gender}</TableCell>
+              <TableCell align="right">{'recovered'}</TableCell>
+
             </TableRow>
           ))}
         </TableBody>

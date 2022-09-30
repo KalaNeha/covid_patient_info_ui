@@ -1,26 +1,36 @@
+import React from 'react';
 import Nav from './component/Nav';
-import Login from './component/Login';
+import Login from './pages/Login';
 import Home from './pages/Home';
 import Admin from './pages/Admin';
-import State_info from './pages/State';
-import District_info from './pages/District';
-import Patient_info from './pages/Patient';
+import StateInfo from './pages/State_list';
+import DistrictList from './pages/District_list';
+import DistrictInformation from './pages/District_info';
 import './App.css';
-import {BrowserRouter as Router, Switch, Route, Routes} from 'react-router-dom';
+import {BrowserRouter as Router,  Route, Routes,} from 'react-router-dom';
 
-function App() {
-  return (
- <Router>
+function App(){
+  
+    return (
+      <Router>
     <Nav/>
-    <Routes> <Route path="/" exact element={<Home />} />
+    {/* <ProtectedRoutes /> */}
+    <Routes>
+     {/* <Route path="/" element={<Navigate to="/home" />} /> */}
+
+    <Route path="/" element={<Home />} />
     <Route path="/login" element={<Login />} />
     <Route path="/admin" element={<Admin />} />
-    <Route path='/country/india' element={<State_info/>}/>
-    <Route path='/state/delhi' element={<District_info/>}/>
-    <Route path='/patient' element={<Patient_info/>}/>
+    <Route path='/:country' element={<StateInfo/>} />
+    <Route path='/:country/:state' element={<DistrictList/>} />
+    <Route path='/:country/:state/:district' element={<DistrictInformation/>}/>
+
     </Routes>
 </Router>
-  );
+    );
+  
 }
-
+ 
 export default App;
+
+
