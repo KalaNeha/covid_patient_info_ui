@@ -1,9 +1,10 @@
-import * as d3 from 'd3';
+import { useSlotProps } from '@mui/base';
+import *as d3 from 'd3';
 
-function Graph(){
+function Graph(props){
         var treeData = [
             {
-              "name": "Professor",
+              "name": props.name,
               "parent": "null",
               "type":"black",
               "level":"yellow",

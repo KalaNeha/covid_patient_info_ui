@@ -17,7 +17,10 @@ function Login() {
       id="exampleInputEmail1"
       aria-describedby="emailHelp"
     />
+<<<<<<< HEAD:src/pages/Login.js
+=======
     
+>>>>>>> dc8f7721ac0ecad62d40c77dd95a3c7c7071311d:src/component/Login.jsx
   </div>
   <div className="mb-3 mx-5">
     <label htmlFor="exampleInputPassword1" className="form-label">
@@ -29,9 +32,14 @@ function Login() {
       id="exampleInputPassword1"
     />
   </div>
+<<<<<<< HEAD:src/pages/Login.js
+  <button type="submit" className="btn btn-primary mx-5">
+    Login
+=======
   
   <button type="submit" className="btn btn-primary mx-5">
     Log in
+>>>>>>> dc8f7721ac0ecad62d40c77dd95a3c7c7071311d:src/component/Login.jsx
   </button>
 </form>
     
