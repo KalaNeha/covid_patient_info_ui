@@ -4,67 +4,62 @@
             "name":"India",
             "active_cases":4000,
             "recover":2400,
-            "deaths":2400
-        },
+            "deaths":2400        },
         {
             "id":2,
             "name":"USA",
             "active_cases":3000,
             "recover":2210,
-            "deaths":1398
-        },
+            "deaths":1398        },
         {
             "id":3,
             "name":"Pakistan",
             "active_cases":2000,
             "recover":2290,
-            "deaths":9800
-        },
+            "deaths":9800        },
         {
             "id":4,
             "name":"South Korea",
             "active_cases":2780,
             "recover":2000,
-            "deaths":3908
-        },
+            "deaths":3908        },
         {
             "id":5,
             "name":"Japan",
             "active_cases":1890,
             "recover":2181,
-            "deaths":4800
-        }
+            "deaths":4800        }
         
     ],
 
     "India":[{
         "id":1,
         "name":"Delhi",
-        "active_cases":354664,
+        "active_cases":35466,
         "recover":12344,
         "deaths":223    },
     {
         "id":2,
         "name":"Uttrakhand",
-        "active_cases":354664,
+        "active_cases":35464,
         "recover":12344,
         "deaths":223    },
     {
         "id":3,
         "name":"Kolkata",
-        "active_cases":354664,
+        "active_cases":34664,
         "recover":12344,
         "deaths":223    },
     {
         "id":4,
         "name":"Mumbai",
-        "active_cases":354664,
+        "active_cases":54664,
         "recover":12344,
         "deaths":223    },
     {
         "id":5,
         "name":"Banglore",
-        "active_cases":354664,
+        "active_cases":35464,
         "recover":12344,
         "deaths":223    }
     
@@ -118,7 +113,9 @@
     "name":"New Delhi",
     "active_cases":354664,
     "recover":12344,
-    "deaths":223},
+    "deaths":223,
+    "closed_cases":125690
+},
 {
     "id":4,
     "name":"North Delhi",
@@ -187,6 +184,7 @@
     "age":33,
     "gender":"male",
     "disease_id":1
+    
 }, 
 {
     "id": 3,
@@ -204,6 +202,31 @@
     "age":60,
     "gender":"female",
     "disease_id":1
+}],
+"patientInformation":[{
+    "id": 4,
+    "name": "Mani",
+    "email": "mani@mail.com",
+    "adderss": "West street",
+    "age":60,
+    "gender":"female",
+    "disease_id":1,
+    "spread":[{
+        "name":"Robert",
+        "status":"Positive"
+        },
+        {
+            "name":"Satheesh",
+            "status":"Negative"
+            },
+            {
+                "name":"Sumit",
+                "status":"Positive"
+                },
+                {
+                    "name":"Rahul",
+                    "status":"Positive"
+                    }]
 }]
 
 }

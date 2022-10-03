@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -9,24 +8,21 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Link, useNavigate } from 'react-router-dom';
 
+const PatientTable = (props) => {
+  const {alldata : rows, name} =props;
 
-// const history = useHistory()
-
-// history.push("/country/state")
-const BTable = (props) => {
- const {alldata : rows, name} =props;
-
-
- console.log(props);
-  return (
-    <TableContainer component={Paper}>
+  return ( 
+<TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">       
        <TableHead>
           <TableRow>
-            <TableCell>{name}</TableCell>
-            <TableCell align="right">Active Cases</TableCell>
-            <TableCell align="right">Close Cases</TableCell>
-            <TableCell align="right">Deaths</TableCell>
+          <TableCell>{name}</TableCell>
+            <TableCell align="right">Email</TableCell>
+            <TableCell align="right">ADDRESS</TableCell>
+            <TableCell align="right">Age</TableCell>
+            <TableCell align="right">Gender</TableCell>
+            <TableCell align="right">Status</TableCell>
+
            
           </TableRow>
         </TableHead>
@@ -37,13 +33,15 @@ const BTable = (props) => {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
             
-              <TableCell  component="th" scope="row" style={{cursor: "pointer"}}>
-               <Link to={row.name}>{row.name}</Link>  
+              <TableCell component="th" scope="row" style={{cursor: "pointer"}}>
+              <Link to={row.name}>{row.name}</Link>  
               </TableCell>
-              <TableCell align="right">{row.active_cases}</TableCell>
-              <TableCell align="right">{row.recover}</TableCell>
-              <TableCell align="right">{row.deaths}</TableCell>
-              
+              <TableCell align="right">{row.email}</TableCell>
+              <TableCell align="right">{row.address}</TableCell>
+              <TableCell align="right">{row.age}</TableCell>
+              <TableCell align="right">{row.gender}</TableCell>
+              <TableCell align="right">{'recovered'}</TableCell>
+
             </TableRow>
           ))}
         </TableBody>
@@ -52,4 +50,4 @@ const BTable = (props) => {
   );
 }
  
-export default BTable;
+export default PatientTable;

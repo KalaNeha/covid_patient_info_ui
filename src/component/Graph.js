@@ -14,37 +14,33 @@ function Graph(props){
                   "parent": "A",
                   "type":"black",
                   "level":"blue",
-                  "children": [
-                    {
-                      "name": "Raquel",
-                      "parent": "B"
-                    },
-                    {
-                      "name": "Tokio",
-                      "parent": "B"
-                    }
-                  ]
                 },
+                {
+                    "name": "Raquel",
+                    "parent": "A"
+                  },
+                  {
+                    "name": "Tokio",
+                    "parent": "A"
+                  },
                 {
                   "name": "Berlin",
                   "parent": "A",
                   "type":"black",
                   "level":"blue",
-                  "children": [
-                    {
-                      "name": "Denver",
-                      "parent": "E",
-                      "type":"black",
-                  "level":"green",
-                    },
-                    {
-                      "name": "Nairobi",
-                      "parent": "E",
-                      "type":"black",
-                  "level":"green",
-                    }
-                  ]
                 },
+                {
+                    "name": "Denver",
+                    "parent": "A",
+                    "type":"black",
+                "level":"green",
+                  },
+                  {
+                    "name": "Nairobi",
+                    "parent": "A",
+                    "type":"black",
+                "level":"green",
+                  },
                 {
                     "name": "Helsinki",
                     "parent": "A",

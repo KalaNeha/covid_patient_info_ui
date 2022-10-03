@@ -1,11 +1,13 @@
 import React from 'react';
-import Graph from '../component/Graph';
+import Graph from './Graph';
 
-function PatientInfo(props){
+function PatientInformationDisplay(props){
 
-  const {data : {name , email, address, age}} = props
+  const {data : {name , email, age}} = props
+  console.log(props);
 
-  return (  <>
+  return (  
+  <>
 <div className="form-group row">
 
       <label htmlFor="staticEmail" className="col-sm-2 col-form-label">Name</label>
@@ -18,22 +20,22 @@ function PatientInfo(props){
         {email}
       </div>
       </div>
-      <div className="form-group row">
+      {/* <div className="form-group row">
       <label htmlFor="inputPassword" className="col-sm-2 col-form-label">Address</label>
       <div className="col-sm-10">
         {address}
       </div>
-      </div>
+      </div> */}
       <div className="form-group row">
       <label htmlFor="inputPassword" className="col-sm-2 col-form-label">Age</label>
       <div className="col-sm-10">
         {age}
       </div>
       </div>
+
       </div>
-      <Graph
-      name={name}
-      />
+      <Graph name={name}/>
+
       {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/1200px-SNice.svg.png" /> */}
 </>
      
@@ -41,4 +43,4 @@ function PatientInfo(props){
   
 }
  
-export default PatientInfo;
+export default PatientInformationDisplay;

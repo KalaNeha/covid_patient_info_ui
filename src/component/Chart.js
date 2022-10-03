@@ -61,7 +61,7 @@ export default function App({data}) {
       <Tooltip />
       <Legend />
       <Bar dataKey="Active" fill="#82ca9d" />
-      <Bar dataKey="Deaths" fill="#e8a4a4" />
+      <Bar dataKey="Closed" fill="#e8a4a4" />
     </BarChart>
   );
 }
