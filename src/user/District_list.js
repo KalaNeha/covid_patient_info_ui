@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import BTable from '../component/Table_user.js';
+import BTable from '../component/UserTable';
 import Chart from '../component/Chart';
 
 
@@ -22,7 +22,7 @@ function DistrictList () {
                     name: item.name,
                     Active: item.active_cases                        ,
                     Deaths: item.deaths,
-                    amt: item.recover
+                    Closed: item.recover
                   }
         ))
 

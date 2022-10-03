@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import Home from "./Home";
-
+import Home from "../user/Home";
 import "./styles.css";
 
 function App() {

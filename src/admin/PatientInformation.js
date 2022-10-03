@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
+import PatientInformationDisplay from "../component/PatientInformationDisplay";
 import Graph from "../component/Graph";
-import PatientInfo from "./Patient_info";
 import axios from "axios";
 
-function Admin() {
+function PatientInformation() {
+    
     const [isLoading, setIsLoading] = useState(false);
     const [allData, setAllData] = useState([]);
 
     const getFetchUsers = async () => {
         setIsLoading(true);
         try {
-            const response = await axios.get("http://localhost:3002/patients");
+            const response = await axios.get("http://localhost:3002/patientInformation");
             if (Array.isArray(response.data) && response?.data.length > 0) {
                 setAllData(response.data);
             }
@@ -26,7 +27,14 @@ function Admin() {
     }, []);
 
     return allData.map((alldata) => (
-        <PatientInfo key={alldata.id} data={alldata} />
-    ));
+        <PatientInformationDisplay key={alldata.id} data={alldata} />
+
+    )
+    );
+    // return (
+    //     <>
+    //     <PatientInformationDisplay data={allData}/>
+    //     </>
+    // );
 }
-export default Admin;
+export default PatientInformation;

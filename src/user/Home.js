@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Chart from '../component/Chart';
-import BTable from '../component/Table_user.js';
+import BTable from '../component/UserTable';
 
 function Home () {
   const [isLoading, setIsLoading] = useState(false)
@@ -19,8 +19,7 @@ const getFetchCountries = async() => {
             name: item.name,
             Active: item.active_cases                        ,
             Deaths: item.deaths,
-            amt: item.recover
-          }
+            Closed: item.recover          }
 ))
 
 setChartData(newChartData)
