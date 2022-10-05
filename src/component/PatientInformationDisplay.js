@@ -1,3 +1,4 @@
+import { fontWeight } from '@mui/system';
 import React from 'react';
 import Graph from './Graph';
 
@@ -8,14 +9,14 @@ function PatientInformationDisplay(props){
 
   return (  
   <>
-<div className="form-group row">
-
-      <label htmlFor="staticEmail" className="col-sm-2 col-form-label">Name</label>
+<div className="form-group row" style={{width:1000, margin:20, padding:56}}>
+<h2>Patient Details</h2>
+      <label htmlFor="staticEmail" className="col-sm-2 col-form-label" style={{fontWeight:700}}>Name</label>
       <div className="col-sm-10">
         {name}
       </div>
       <div className="form-group row">
-      <label htmlFor="inputPassword" className="col-sm-2 col-form-label">Email</label>
+      <label htmlFor="inputPassword" className="col-sm-2 col-form-label" style={{fontWeight:700}}>Email</label>
       <div className="col-sm-10">
         {email}
       </div>
@@ -27,7 +28,7 @@ function PatientInformationDisplay(props){
       </div>
       </div> */}
       <div className="form-group row">
-      <label htmlFor="inputPassword" className="col-sm-2 col-form-label">Age</label>
+      <label htmlFor="inputPassword" className="col-sm-2 col-form-label" style={{fontWeight:700}}>Age</label>
       <div className="col-sm-10">
         {age}
       </div>
