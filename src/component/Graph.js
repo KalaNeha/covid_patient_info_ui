@@ -3,7 +3,7 @@ import *as d3 from 'd3';
 
 function Graph(props){
         var treeData = [
-            {
+ {
               "name": props.name,
               "parent": "null",
               "type":"black",
@@ -11,41 +11,155 @@ function Graph(props){
               "children": [
                 {
                   "name": "Rio",
-                  "parent": "A",
                   "type":"black",
                   "level":"blue",
+                  "children": [
+                    {
+                      "name": "Raquel",
+                      "type":"black",
+                      "level":"violet",
+                      "children":[
+                        {
+                          "name": "Hackett",
+                          "type":"black",
+                          "level":"purple",
+
+                        },
+                        {
+                          "name": "Alexender",
+                          "type":"black",
+                          "level":"purple",
+                          "children":[
+                            {
+                              "name": "Nobita",
+                              "type":"black",
+                              "level":"coral",
+    
+                            },
+                            {
+                              "name": "Gian",
+                              "type":"black",
+                              "level":"coral",
+    
+                            }
+                          ]
+
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Tokio",
+                      "type":"black",
+                      "level":"violet"
+                    }
+                  ]
                 },
                 {
-                    "name": "Raquel",
-                    "parent": "A"
-                  },
-                  {
-                    "name": "Tokio",
-                    "parent": "A"
-                  },
+                  "name": "Arina",
+                  "type":"black",
+                  "level":"red",
+                  "children": [
+                    {
+                      "name": "Sabella",
+                      "type":"black",
+                      "level":"maroon",
+                      "children":[
+                        {
+                          "name": "Daniel",
+                          "type":"black",
+                          "level":"chocolate",
+                          "children":[
+                            {
+                              "name": "Bonsi",
+                              "type":"black",
+                              "level":"cyan",
+    
+                            },
+                            {
+                              "name": "Koral",
+                              "type":"black",
+                              "level":"cyan",
+    
+                            }
+                          ]
+
+                        },
+                        {
+                          "name": "Jack",
+                          "type":"black",
+                          "level":"chocolate",
+
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Raakel",
+                      "type":"black",
+                      "level":"maroon"
+                    }
+                  ]
+                },
                 {
                   "name": "Berlin",
-                  "parent": "A",
                   "type":"black",
-                  "level":"blue",
+                  "level":"red",
+                  "children": [
+                    {
+                      "name": "Denver",
+                      "type":"black",
+                  "level":"green",
+                    },
+                    {
+                      "name": "Nairobi",
+                      "type":"black",
+                  "level":"green",
+                  "children":[
+                    {
+                      "name": "Allar",
+                      "type":"black",
+                      "level":"blue",
+
+                    },
+                    {
+                      "name": "Griffin",
+                      "type":"black",
+                      "level":"blue",
+                      "children":[
+                        {
+                          "name": "Ron",
+                          "type":"black",
+                          "level":"brown"
+                        },
+                        {
+                          "name": "Mac",
+                          "type":"black",
+                          "level":"brown",
+    
+                        }
+                      ]
+
+                    }
+                  ]
+                    }
+                  ]
                 },
                 {
-                    "name": "Denver",
-                    "parent": "A",
-                    "type":"black",
-                "level":"green",
-                  },
-                  {
-                    "name": "Nairobi",
-                    "parent": "A",
-                    "type":"black",
-                "level":"green",
-                  },
-                {
                     "name": "Helsinki",
-                    "parent": "A",
                     "type":"black",
-                  "level":"red",
+                  "level":"blue",
+                  "children":[
+                    {
+                      "name": "Henna",
+                      "type":"black",
+                      "level":"magenta"
+                    },
+                    {
+                      "name": "Mic",
+                      "type":"black",
+                      "level":"magenta",
+
+                    }
+                  ]
                   }
               ]
             }
