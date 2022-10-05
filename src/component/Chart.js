@@ -49,11 +49,12 @@ export default function App({data}) {
       height={500}
       data={data}
       margin={{
-        top: 50,
+        top: 200,
         right: 30,
         left: 100,
         bottom: 5
       }}
+      padding-bottom={56}
     >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />

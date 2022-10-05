@@ -8,12 +8,15 @@ import DistrictList from './user/District_list';
 import DistrictInformation from './admin/DistrictInformation';
 import './App.css';
 import {BrowserRouter as Router,  Route, Routes,} from 'react-router-dom';
+import Footer from "./component/Footer";
 
 function App(){
   
     return (
+      <>
+      <Nav/>
       <Router>
-    <Nav/>
+    
     {/* <ProtectedRoutes /> */}
     <Routes>
      {/* <Route path="/" element={<Navigate to="/home" />} /> */}
@@ -28,6 +31,10 @@ function App(){
 
     </Routes>
 </Router>
+<Footer/>
+
+      </>
+     
     );
   
 }

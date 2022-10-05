@@ -12,7 +12,7 @@ const PatientTable = (props) => {
   const {alldata : rows, name} =props;
 
   return ( 
-<TableContainer component={Paper}>
+<TableContainer component={Paper} className='mb-5 ms-1'>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">       
        <TableHead>
           <TableRow>
