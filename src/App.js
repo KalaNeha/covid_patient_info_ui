@@ -9,14 +9,14 @@ import DistrictInformation from './admin/DistrictInformation';
 import './App.css';
 import {BrowserRouter as Router,  Route, Routes,} from 'react-router-dom';
 import Footer from "./component/Footer";
+import { AuthProvider } from "./contexts/AuthContext"
 
 function App(){
-  
     return (
       <>
       <Nav/>
       <Router>
-    
+      <AuthProvider>
     {/* <ProtectedRoutes /> */}
     <Routes>
      {/* <Route path="/" element={<Navigate to="/home" />} /> */}
@@ -28,8 +28,11 @@ function App(){
     <Route path='/:country/:state' element={<DistrictList/>} />
     <Route path='/:country/:state/:district' element={<DistrictInformation/>}/>
     <Route path='/:country/:state/:district/:patient' element={<PatientInformation />} />
+    {/* <Route path='/:country/:state/:district' element={<DistrictInformation/>}/>
+    <Route path='/:country/:state/:district/:patient' element={<PatientInformation />} /> */}
 
     </Routes>
+    </AuthProvider>
 </Router>
 <Footer/>
 
