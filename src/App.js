@@ -10,6 +10,7 @@ import './App.css';
 import {BrowserRouter as Router,  Route, Routes,} from 'react-router-dom';
 import Footer from "./component/Footer";
 import { AuthProvider } from "./contexts/AuthContext"
+import PrivateRoute from "./component/PrivateRoute"
 
 function App(){
     return (
@@ -26,8 +27,8 @@ function App(){
     {/* <Route path="/admin" element={<PatientInformation />} /> */}
     <Route path='/:country' element={<StateInfo/>} />
     <Route path='/:country/:state' element={<DistrictList/>} />
-    <Route path='/:country/:state/:district' element={<DistrictInformation/>}/>
-    <Route path='/:country/:state/:district/:patient' element={<PatientInformation />} />
+    <PrivateRoute path='/:country/:state/:district' element={<DistrictInformation/>}/>
+    <PrivateRoute path='/:country/:state/:district/:patient' element={<PatientInformation />} />
     {/* <Route path='/:country/:state/:district' element={<DistrictInformation/>}/>
     <Route path='/:country/:state/:district/:patient' element={<PatientInformation />} /> */}
 
