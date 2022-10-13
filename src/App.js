@@ -27,8 +27,12 @@ function App(){
     {/* <Route path="/admin" element={<PatientInformation />} /> */}
     <Route path='/:country' element={<StateInfo/>} />
     <Route path='/:country/:state' element={<DistrictList/>} />
-    <PrivateRoute path='/:country/:state/:district' element={<DistrictInformation/>}/>
-    <PrivateRoute path='/:country/:state/:district/:patient' element={<PatientInformation />} />
+    <Route path='/:country/:state/:district' element={<PrivateRoute/>}>
+      <Route index element={<DistrictInformation/>}/>
+    </Route>
+    <Route path='/:country/:state/:district/:patient' element={<PrivateRoute />} >
+      <Route index element={<PatientInformation/>}/>
+    </Route>
     {/* <Route path='/:country/:state/:district' element={<DistrictInformation/>}/>
     <Route path='/:country/:state/:district/:patient' element={<PatientInformation />} /> */}
 
