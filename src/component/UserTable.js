@@ -17,7 +17,6 @@ const UserTable = (props) => {
  const {alldata : rows, name} =props;
 
 
- console.log(props);
   return (
     <TableContainer component={Paper} className='mb-5 ms-1'>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">       
