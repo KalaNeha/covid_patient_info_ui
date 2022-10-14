@@ -2,11 +2,6 @@ import { useSlotProps } from "@mui/base";
 import * as d3 from "d3";
 
 function Graph(props) {
-   function shouldComponentUpdate() {
-        console.log('Greeting - shouldComponentUpdate lifecycle');
-    
-        return false;
-      }
     var treeData = [
         {
             name: props.name,
