@@ -51,6 +51,26 @@ function Nav() {
                                     </a>
                                 </li>
                             </ul>
+                            {!currentUser && (
+                                <div
+                                    // style={{
+                                    //     padding: "0.3rem",
+                                    //     background: "white",
+                                    //     color: "black",
+                                    //     borderRadius: "8px",
+                                    //     fontWeight: "bold",
+                                    //     cursor: "pointer",
+                                    // }}
+                                    className="nav-item"
+                                >
+                                    <a
+                                        className="nav-link active text-light"
+                                        aria-current="page"
+                                        href="/login"
+                                    >
+                                        Log In
+                                    </a>                                </div>
+                            )}
                             {currentUser && (
                                 <div
                                     style={{
